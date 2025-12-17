@@ -131,7 +131,7 @@ module.exports = {
     // Food
     food_types: [ // Possible food types outside the nest
         [1, [
-            [65, "egg"], [64, "triangle"], [45, "square"], [7, "pentagon"], [1, "hexagon"]
+            [65, "shinyEgg"], [64, "shinyTriangle"], [45, "shinySquare"], [7, "shinyPentagon"], [1, "shinyHexagon"]
         ]],
         [1/50000, [
             [625, "gem"], [125, "shinyTriangle"], [25, "shinySquare"], [5, "shinyPentagon"], [1, "shinyHexagon"]
@@ -154,8 +154,8 @@ module.exports = {
         ]]
     ],
 
-    food_cap: 70, // Maximum number of regular food at any time.
-    food_cap_nest: 15, // Maximum number of nest food at any time.
+    food_cap: 1000, // Maximum number of regular food at any time.
+    food_cap_nest: 100, // Maximum number of nest food at any time.
     enemy_cap_nest: 10, // Maximum number of enemy nest food at any time.
     food_group_cap: 6, // Number of foods that random food groups spawn with
 
@@ -204,7 +204,7 @@ module.exports = {
     arena_shape: "rect",
     blackout: false,
     space_physics: false,
-    arms_race: false,
+    arms_race: true,
     clan_wars: false,
     growth: false,
     groups: false,
