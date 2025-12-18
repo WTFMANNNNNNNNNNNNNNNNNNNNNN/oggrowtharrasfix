@@ -21,7 +21,7 @@ module.exports = {
             featured: false,
 
             region: "local", // The region the server is on.
-            gamemode: ["tdm"], // The selected gamemode.
+            gamemode: ["tdm", "growth"], // The selected gamemode.
             player_cap: 80, // The maximum number of players that can join the server. Not including bots.
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
@@ -40,7 +40,7 @@ module.exports = {
             featured: false,
 
             region: "local", // The region the server is on.
-            gamemode: ["ffa"], // The selected gamemode.
+            gamemode: ["ffa", "growth"], // The selected gamemode.
             player_cap: 80, // Not including bots.
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
