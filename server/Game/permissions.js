@@ -38,7 +38,7 @@ module.exports = [
         note: "note here"
     },
     {
-        key: process.env.DEVELOPER,
+        key: "devtokentest",
         discordID: "0",
         nameColor: "#ffffff",
         class: "developer",
