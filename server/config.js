@@ -56,9 +56,8 @@ module.exports = {
       share_client_server: false, // Only one server at a time can have this enabled.
       // The above is required if your VM (the machine that hosts the website stuff) doesn't support multi-ports and forces everything through the main server.
       // This also overrides the below HOST and PORT settings to be identical to the main server's HOST/PORT (by default, 3000).
-
-      host: "localhost:3002", // Server host location.
-      port: 3002, // The port on the server.
+      host: "localhost:3003", // Server host location.
+      port: 3003, // The port on the server.
       id: "betatest1", // (<host>/#<id>)
       featured: false,
 
@@ -128,7 +127,7 @@ module.exports = {
   bot_start_level: 45, // How much XP bots will receive when first created.
   bot_skill_upgrade_chances: [1, 1, 3, 4, 4, 4, 4, 2, 1, 1], // The chances of a bot upgrading a specific skill when skill upgrades are available.
   bot_class_upgrade_chances: [1, 5, 20, 37, 37], // The chances of a bot upgrading a specific amount of times before it stops upgrading.
-  bot_name_prefix: "[AI] ", // This is prefixed before the bot's randomly chosen name.
+  bot_name_prefix: "", // This is prefixed before the bot's randomly chosen name.
 
   // The class that players and bots spawn as.
   spawn_class: "basic",
@@ -142,31 +141,31 @@ module.exports = {
     [
       1,
       [
-        [65, "legendaryEgg"],
-        [64, "legendaryTriangle"],
-        [45, "legendarySquare"],
-        [7, "legendaryPentagon"],
-        [1, "legendaryHexagon"],
+        [65, "rainbowEgg"],
+        [64, "rainbowTriangle"],
+        [45, "rainbowSquare"],
+        [7, "rainbowPentagon"],
+        [1, "rainbowHexagon"],
       ],
     ],
     [
       1 / 50000,
       [
         [625, "gem"],
-        [125, "legendaryTriangle"],
-        [25, "legendarySquare"],
-        [5, "legendaryPentagon"],
-        [1, "legendaryHexagon"],
+        [125, "rainbowTriangle"],
+        [25, "rainbowSquare"],
+        [5, "rainbowPentagon"],
+        [1, "rainbowHexagon"],
       ],
     ],
     [
       1 / 1000000,
       [
         [1296, "jewel"],
-        [216, "legendaryTriangle"],
-        [36, "legendarySquare"],
-        [6, "legendaryPentagon"],
-        [1, "legendaryHexagon"],
+        [216, "rainbowTriangle"],
+        [36, "rainbowSquare"],
+        [6, "rainbowPentagon"],
+        [1, "rainbowHexagon"],
       ],
     ],
   ],
@@ -175,15 +174,15 @@ module.exports = {
     [
       1,
       [
-        [16, "legendaryPentagon"],
-        [4, "legendaryBetaPentagon"],
-        [1, "legendaryAlphaPentagon"],
+        [16, "rainbowPentagon"],
+        [4, "rainbowBetaPentagon"],
+        [1, "rainbowAlphaPentagon"],
       ],
     ],
   ],
   enemy_types_nest: [
     // Possible enemy food types in the nest
-    [1, [[1, "crasher"]]],
+    [1, [[10, "crasher"]]],
     [
       1 / 20,
       [
@@ -196,7 +195,7 @@ module.exports = {
 
   food_cap: 1000, // Maximum number of regular food at any time.
   food_cap_nest: 100, // Maximum number of nest food at any time.
-  enemy_cap_nest: 10, // Maximum number of enemy nest food at any time.
+  enemy_cap_nest: 100, // Maximum number of enemy nest food at any time.
   food_group_cap: 6, // Number of foods that random food groups spawn with
 
   // Bosses
